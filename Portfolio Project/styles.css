@@ -15,10 +15,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #999;
-}
-a:hover {
-  color: #6633ff;
+  color: #FFCD00;
 }
 
 /* Section Styles */
@@ -49,15 +46,19 @@ a:hover {
   padding: 5px 10px 10px 10px;
 }
 .nav a {
-  transition: all .5s;
+  transition: all .3s;
 }
 .nav a:hover {
-  color: white
+  color: #009e2c;
+}
+
+#experience-nav a:hover {
+  color: #a70f00;
 }
 
 header {
   text-align: center;
-  background: url('images/West-Sierras.jpg') no-repeat center center ;
+  background: url('images/west-sierras.jpg') no-repeat center center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -65,6 +66,15 @@ header {
 header {
   line-height: 1.5;
 }
+
+header.experience {
+  text-align: center;
+  background: url('images/truck-wreck2.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+
 header .profile-image {
   margin-top: 50px;
   width: 150px;
@@ -76,6 +86,19 @@ header .profile-image {
 header .profile-image:hover {
   transform: scale(1.5) rotate(3deg);
 }
+
+header .EKG-image {
+  margin-top: 50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #d9d9d9;
+  transition: all .5s;
+}
+header .EKG-image:hover {
+  transform: scale(1.5) rotate(-3deg);
+}
+
 .tag {
   background-color: #d9d9d9;
   color: black;
@@ -85,6 +108,11 @@ header .profile-image:hover {
   margin: 10px auto;
 }
 .location {
+  background-color: #002D72;
+  color: #FFCD00;
+}
+
+.EKG {
   background-color: #002D72;
   color: #FFCD00;
 }
@@ -102,6 +130,21 @@ header .profile-image:hover {
 
 .card:hover {
   border-color: #009e2c;
+}
+
+.experience-card {
+  margin: 30px;
+  padding: 20px 40px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+
+.experience-card:hover {
+  border-color: #a70f00;
 }
 
 ul.skills {
@@ -125,7 +168,7 @@ ul.skills {
 
 .contact-tile {
   margin: 30px;
-  padding: 20px;
+  padding: 12px;
   max-width: 1200px;
   text-align: center;
   background: #fff;
