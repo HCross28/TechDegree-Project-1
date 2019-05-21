@@ -88,9 +88,10 @@ header .profile-image:hover {
   background-color: #002D72;
   color: #FFCD00;
 }
+
 .card {
   margin: 30px;
-  padding: 20px 40px 40px;
+  padding: 20px 40px 40px 40px;
   max-width: 500px;
   text-align: left;
   background: #fff;
@@ -98,6 +99,7 @@ header .profile-image:hover {
   border-radius: 6px;
   transition: all .5s;
 }
+
 .card:hover {
   border-color: #009e2c;
 }
@@ -119,6 +121,44 @@ ul.skills {
 .skills li:nth-child(odd) {
   background: #0399ff;
   color: white;
+}
+
+.contact-tile {
+  margin: 30px;
+  padding: 20px;
+  max-width: 1200px;
+  text-align: center;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+
+.contact-tile:hover {
+  border-color: #009e2c;
+}
+
+ul.contact-info {
+  padding:0;
+  text-align:center
+}
+
+.contact-info li {
+  display: inline-block;
+  padding: 5px 60px;
+
+}
+
+.contact-tile a:link {
+    color: #009e2c;
+}
+
+.contact-tile a:visited {
+    color: grey;
+}
+
+.contact-tile a:hover {
+    color: blue;
 }
 
 footer {
@@ -152,12 +192,7 @@ a.social {
   opacity: .4;
   transition: all .5s;
 }
-a.twitter {
-  background-image: url(images/twitter.svg);
-}
-a.linkedin {
-  background-image: url(images/linkedin.svg);
-}
+
 a.github {
   background-image: url(images/github.svg);
 }
